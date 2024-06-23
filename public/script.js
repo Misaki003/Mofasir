@@ -12,9 +12,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-
-    appendMessage("bot", "(: أهلا انا متشوق للحلم الذي جأت به 😊 لا تجعلني أنتظر كثيرا")
-    
+    async function firstMessage() {
+       const response = await fetch("/sendMessage", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ message: "هاي" })
+            });
+            const data = await response.json();
+            if (response.ok) {
+                appendMessage("bot", data.response);
+            }
+    }    
 
     async function sendMessage() {
         const userMessage = messageInput.value.trim();
