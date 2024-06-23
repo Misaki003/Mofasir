@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 appendMessage("bot", data.response);
             }
     }    
-
+    firstMessage()
     async function sendMessage() {
         const userMessage = messageInput.value.trim();
         if (userMessage === "") return;
