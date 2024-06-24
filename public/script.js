@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     async function firstMessage() {
+       appendTypingIndicator();
        const response = await fetch("/sendMessage", {
                 method: "POST",
                 headers: {
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
             const data = await response.json();
             if (response.ok) {
+                removeTypingIndicator();
                 appendMessage("bot", data.response);
             }
     }    
