@@ -11,7 +11,7 @@ const port = process.env.PORT || 4000;
 const apiKey = "AIzaSyARhBRczxq06S5fQojxvoGvInuqJrR3GQk"; // Replace with your actual API key
 const genAI = new GoogleGenerativeAI(apiKey);
 
-const instructions = "انت مفسر أحلام";
+const instructions = "انت مفسر أحلام مطور من قبل المطور عماد مهمتك هي تفسير الأحلام فقط بطريقة منطقية وعقلانية";
 
 async function initializeModel() {
     try {
