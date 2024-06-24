@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 console.error("Error from server:", data.error);
                 removeTypingIndicator();
-                appendMessage("bot", "Error: " + data.error);
+                appendMessage("bot", "Error: الرجاء إعادة المحاولة بعد 5 ثوان");
             }
         } catch (error) {
             console.error("Network error:", error);
