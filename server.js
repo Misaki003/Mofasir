@@ -8,7 +8,7 @@ const {
 
 const app = express();
 const port = process.env.PORT || 4000;
-const apiKey = "AIzaSyApiu35dKeJ4Y3CxCVDgx4T-q0qDnsANyA"; // Replace with your actual API key
+const apiKey = "AIzaSyCHxyAKlogMsBZ5PKE7TjuCvWbQt2qzCzo"; // Replace with your actual API key
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const instructions = "انت مفسر أحلام مطور من قبل المطور عماد مهمتك هي تفسير الأحلام فقط بطريقة منطقية وعقلانية";
